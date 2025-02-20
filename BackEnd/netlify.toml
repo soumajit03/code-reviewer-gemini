@@ -1,3 +1,0 @@
-[build]
-  command = "npx nodemon"  # This should be the command to start your backend
-  publish = "BackEnd"  # Adjust if needed to point to the correct directory
