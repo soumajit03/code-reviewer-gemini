@@ -22,13 +22,15 @@ function App() {
   }, []);
 
   async function reviewCode() {
-    const response = await axios.post('http://localhost:3000/ai/get-review', { code })
+    const response = await axios.post('http://localhost:3007/ai/get-review', { code })
     setReview(response.data)
     // console.log(response.data)
   }
   
   return (
     <>
+        <h3 style={{ paddingLeft: "10px", paddingTop: "10px" }}>AI-code Reviewer</h3>
+        
       <main>
         <div className="left">
           <div className="code">
